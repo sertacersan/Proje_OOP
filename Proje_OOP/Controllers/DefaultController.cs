@@ -21,6 +21,8 @@ namespace Proje_OOP.Controllers
         public IActionResult Index()
         {
             mesajlar();
+            MesajListesi("Parametre ismi");
+            Kullanıcı("murat123");
             return View();
         }
 
@@ -29,6 +31,7 @@ namespace Proje_OOP.Controllers
             mesajlar();
             ViewBag.t = topla();
             ViewBag.c = Cevre();
+            Kullanıcı("murat000");
             return View();
         }
 
@@ -57,7 +60,18 @@ namespace Proje_OOP.Controllers
         public IActionResult Musteriler()
         {
             ViewBag.d = cumle();
+            Kullanıcı("admin123");
             return View();
+        }
+
+        void MesajListesi(string p)
+        {
+            ViewBag.v = p;
+        }
+
+        void Kullanıcı(string kullaniciadi)
+        {
+            ViewBag.v = kullaniciadi;
         }
     }
 }
