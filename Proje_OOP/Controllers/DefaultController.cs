@@ -47,5 +47,17 @@ namespace Proje_OOP.Controllers
             int sonuc = 2 * (kisa + uzun);
             return sonuc;
         }
+
+        string cumle()
+        {
+            string c = "Merhaba C#";
+            return c;
+        }
+
+        public IActionResult Musteriler()
+        {
+            ViewBag.d = cumle();
+            return View();
+        }
     }
 }
