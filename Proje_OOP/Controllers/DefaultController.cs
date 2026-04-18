@@ -28,6 +28,7 @@ namespace Proje_OOP.Controllers
         {
             mesajlar();
             ViewBag.t = topla();
+            ViewBag.c = Cevre();
             return View();
         }
 
@@ -36,6 +37,14 @@ namespace Proje_OOP.Controllers
             int s1 = 20;
             int s2 = 30;
             int sonuc = s1 + s2;
+            return sonuc;
+        }
+
+        int Cevre()
+        {
+            int kisa = 10;
+            int uzun = 20;
+            int sonuc = 2 * (kisa + uzun);
             return sonuc;
         }
     }
