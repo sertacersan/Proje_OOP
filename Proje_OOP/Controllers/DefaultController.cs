@@ -23,6 +23,7 @@ namespace Proje_OOP.Controllers
             mesajlar();
             MesajListesi("Parametre ismi");
             Kullanıcı("murat123");
+            ViewBag.tp = Topla(10, 20);
             return View();
         }
 
@@ -32,6 +33,7 @@ namespace Proje_OOP.Controllers
             ViewBag.t = topla();
             ViewBag.c = Cevre();
             Kullanıcı("murat000");
+            ViewBag.fakt = Faktoryel(3);
             return View();
         }
 
@@ -72,6 +74,22 @@ namespace Proje_OOP.Controllers
         void Kullanıcı(string kullaniciadi)
         {
             ViewBag.v = kullaniciadi;
+        }
+
+        int Topla(int s1,int s2)
+        {
+            int sonuc = s1 + s2;
+            return sonuc;
+        }
+
+        int Faktoryel(int p)
+        {
+            int f = 1;
+            for(int i = 1; i <= p; i++)
+            {
+                f = f * i;
+            }
+            return f;
         }
     }
 }
