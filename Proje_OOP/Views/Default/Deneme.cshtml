@@ -3,9 +3,13 @@
     Layout = null;
 }
 
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
 <h1>Burası Şehir Paneli</h1>
 
-<table>
+<table class="table table-bordered">
     <tr>
         <th>#</th>
         <th>Ulke</th>
@@ -18,4 +22,12 @@
         <td>@ViewBag.v3</td>
         <td>@ViewBag.v4</td>
     </tr>
+    <tr>
+        <td>@ViewBag.z1</td>
+        <td>@ViewBag.z2</td>
+        <td>@ViewBag.z3</td>
+        <td>@ViewBag.z4</td>
+    </tr>
 </table>
+
+<a href="/Default/Urunler/" class="btn btn-info">Ürünlere git</a>

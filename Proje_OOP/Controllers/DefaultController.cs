@@ -103,6 +103,15 @@ namespace Proje_OOP.Controllers
             ViewBag.v2= sehirler.Ulke;
             ViewBag.v3= sehirler.Ad;
             ViewBag.v4= sehirler.Nufus;
+
+            sehirler.Ad = "Selanik";
+            sehirler.Id = 2;
+            sehirler.Nufus = 10000;
+            sehirler.Ulke = "Yunanistan";
+            ViewBag.z1 = sehirler.Id;
+            ViewBag.z2 = sehirler.Ulke;
+            ViewBag.z3 = sehirler.Ad;
+            ViewBag.z4 = sehirler.Nufus;
             return View();
         }
     }
