@@ -98,6 +98,11 @@ namespace Proje_OOP.Controllers
             sehirler.Ad = "Kiev";
             sehirler.Id = 1;
             sehirler.Nufus = 1000;
+            sehirler.Ulke = "Ukrayna";
+            ViewBag.v1 = sehirler.Id;
+            ViewBag.v2= sehirler.Ulke;
+            ViewBag.v3= sehirler.Ad;
+            ViewBag.v4= sehirler.Nufus;
             return View();
         }
     }
