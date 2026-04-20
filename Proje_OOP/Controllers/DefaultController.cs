@@ -91,5 +91,14 @@ namespace Proje_OOP.Controllers
             }
             return f;
         }
+
+        public IActionResult Deneme()
+        {
+            Sehirler sehirler = new Sehirler();
+            sehirler.Ad = "Kiev";
+            sehirler.Id = 1;
+            sehirler.Nufus = 1000;
+            return View();
+        }
     }
 }
