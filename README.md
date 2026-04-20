@@ -4,3 +4,4 @@
 18.04.2026 Metotlar,Geriye değer döndüren methotlar, string tipte geriye değer döndüren methotlar
 18.04.2026 Methotlarda parametre kullanımı
 20.04.2026 Sınıflar
+20.04.2026 Kalıtım
