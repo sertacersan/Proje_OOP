@@ -3,3 +3,4 @@
 17.04.2026 Context Sınıfı,Code First Migration, Methot örnekleri ve erişim belirleyiciler
 18.04.2026 Metotlar,Geriye değer döndüren methotlar, string tipte geriye değer döndüren methotlar
 18.04.2026 Methotlarda parametre kullanımı
+20.04.2026 Sınıflar
