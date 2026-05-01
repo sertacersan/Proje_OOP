@@ -7,7 +7,7 @@ namespace Proje_OOP.ProjeContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server=localhost\\SQLEXPRESS; database=DbNewOopCore; integrated security=true;");
+            optionsBuilder.UseSqlServer("server=localhost\\SQLEXPRESS; database=DbNewOopCore; integrated security=true; TrustServerCertificate=True;");
         }
 
         public DbSet<Product>Products { get; set; }
