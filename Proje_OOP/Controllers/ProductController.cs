@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Proje_OOP.Entity;
 using Proje_OOP.ProjeContext;
 using System.Linq;
 
@@ -11,6 +12,21 @@ namespace Proje_OOP.Controllers
         {
             var values = context.Products.ToList();
             return View(values);
+        }
+
+
+        [HttpGet]
+        public IActionResult AddProduct()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AddProduct(Product p)
+        {
+            context.Add(p);
+            context.SaveChanges();
+            return RedirectToAction("Index");
         }
     }
 }

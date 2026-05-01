@@ -1,0 +1,25 @@
+﻿@model Proje_OOP.Entity.Product
+@{
+    ViewData["Title"] = "AddProduct";
+    Layout = "~/Views/Shared/_CoreLayout.cshtml";
+}
+
+<h1>Ürün Ekleme Sayfası</h1>
+
+<form method="post">
+
+    @Html.Label("Ürün Adı")
+    @Html.TextBoxFor(x=>x.Name)
+    </br>
+
+    @Html.Label("Fiyat")
+    @Html.TextBoxFor(x=>x.Price)
+    </br>
+
+    @Html.Label("Stok Sayısı")
+    @Html.TextBoxFor(x=>x.Stock)
+    </br>
+    
+    <button class="btn btn-outline-info">Ürünü Ekle</button>
+
+</form>
