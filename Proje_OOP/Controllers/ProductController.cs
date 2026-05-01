@@ -28,5 +28,13 @@ namespace Proje_OOP.Controllers
             context.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public IActionResult DeleteProduct(int id)
+        {
+            var value = context.Products.Where(x => x.Id == id).FirstOrDefault();
+            context.Remove(value);
+            context.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
