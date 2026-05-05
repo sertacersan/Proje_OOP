@@ -7,3 +7,4 @@
 20.04.2026 Kalıtım
 21.04.2026 Product List, Ürünlerin Listelenmesi
 1.05.2026 Proje .NET 10 sürümüne güncellendi.Ürün ekleme sayfası eklendi.Ürün silme eklendi
+2.05.2026 Ürünün güncellenmesi
