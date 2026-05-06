@@ -24,9 +24,18 @@ namespace Proje_OOP.Controllers
         [HttpPost]
         public IActionResult AddCustomer(Customer p)
         {
-            context.Add(p);
-            context.SaveChanges();
-            return RedirectToAction("Index");
+            if(p.Name.Length>=6 && p.City !="" && p.City.Length >= 3)
+            {
+                context.Add(p);
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                ViewBag.message = "hatalı kullanım";
+                return View();
+            }
+   
         }
 
         public IActionResult DeleteCustomer(int id)
