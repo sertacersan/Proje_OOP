@@ -9,4 +9,4 @@
 1.05.2026 Proje .NET 10 sürümüne güncellendi.Ürün ekleme sayfası eklendi.Ürün silme eklendi
 2.05.2026 Ürünün güncellenmesi
 5.05.2026 Müşteriye ait controllerların yazılması
-6.05.2026 Müşteriye ait viewlerin oluşturulması
+6.05.2026 Müşteriye ait viewlerin oluşturulması,Müşterilerde controller şartları
