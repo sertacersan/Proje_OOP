@@ -33,6 +33,7 @@ namespace Proje_OOP.Controllers
         {
             var value = context.Customers.Where(x => x.Id == id).FirstOrDefault();
             context.Remove(value);
+            context.SaveChanges();
             return RedirectToAction("Index");
         }
 
